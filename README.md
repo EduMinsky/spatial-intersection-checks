@@ -58,6 +58,10 @@ While designing the algorithm, I consistently considered how a final user would 
 
 In many GIS workflows, analysts perform most of the analysis in Python and then export the results to desktop GIS software (such as QGIS or ArcGIS) for visual inspection. To provide a faster and more lightweight alternative, I incorporated an interactive exploration function using folium. While this tool does not replace full-featured GIS software, it serves as an efficient sanity check, allowing users to visually validate spatial intersections directly within a Python environment.
 
+`API Design and Internal Interfaces`
+
+During the development of this project, I gained a deeper understanding of internal API design.
+
 ---
 ### How can it be improved:
 - Extend the algorithm to support additional vector geometries (e.g. `LineString` and `Point`), adapting the validation logic to different dimensional intersections.
@@ -65,7 +69,7 @@ In many GIS workflows, analysts perform most of the analysis in Python and then 
   
 ---
 ### Run the project:
-Simple clone this repo into your local machine and start exploring.
+Simple clone this repo into your local machine and start exploring. The main function is spatial_intersection_checks.py
 
 ---
 ### Examples
