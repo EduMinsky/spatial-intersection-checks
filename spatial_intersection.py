@@ -20,7 +20,7 @@ def _ensure_spatial_obj_(obj1,obj2) -> tuple[gpd.GeoDataFrame, gpd.GeoDataFrame]
             raise FileNotFoundError(f"File not found")
         else:
             logger.info("Path to spatial file provided. Reading spatial data")
-            return gpd.read_parquet(path1), gpd.read_file(path2)
+            return gpd.read_file(path1), gpd.read_file(path2)
 
 
     raise TypeError(
