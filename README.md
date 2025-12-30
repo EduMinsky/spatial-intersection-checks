@@ -68,4 +68,16 @@ In many GIS workflows, analysts perform most of the analysis in Python and then 
 Simple clone this repo into your local machine and start exploring.
 
 ---
-### 
+### Examples
+Valid intersection<br>
+The example below shows a case where the intersection between polygons
+is considered valid after the morphological opening and area checks (distance 10m and minimal area of 10_000).
+
+![Valid intersection example](Assets/valid_intersection.png)
+
+Invalid intersection<br>
+The example below shows a false-positive case, where polygons intersect
+only through boundary contact or a very thin overlap. After applying the
+morphological opening, this intersection is correctly discarded (distance 10m and minimal area of 10_000).
+
+![Invalid intersection example](Assets/not_valid_intersection.png)
